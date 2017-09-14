@@ -1,0 +1,47 @@
+.img_title_big {width: 100%;  padding-top: 0px; padding-bottom: 30px;}
+.img_tab {width: 60%;}
+.img_title {width: 75%;  padding-top: 20px; padding-bottom: 30px;}
+.img_pan {width: 45%; height: 100%;}
+
+md-tab-group {
+  width: 90%;
+  margin: 0px auto 0px auto;
+  font-weight: lighter;
+  font-size:1em;
+  color: #191919;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+  letter-spacing:0.04em;}
+
+.mat-tab-header {
+  margin-bottom: 10px !important;
+}
+
+/deep/.mat-tab-label, /deep/.mat-tab-label-active{
+ min-width: 31%!important;
+ padding: 3px!important;
+ margin: 3px!important;
+}
+
+/deep/.mat-tab-group.mat-primary .mat-ink-bar, /deep/.mat-tab-nav-bar.mat-primary .mat-ink-bar {background-color: #af251b!important;}
+
+/deep/.mat-tab-group.mat-primary .mat-tab-label:focus, /deep/.mat-tab-group.mat-primary .mat-tab-link:focus, /deep/.mat-tab-nav-bar.mat-primary .mat-tab-label:focus, /deep/.mat-tab-nav-bar.mat-primary .mat-tab-link:focus {
+    background-color: rgba(136,28,17,.2);
+}
+
+.mat-expansion-panel-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 24px;
+}
+
+/deep/.mat-expansion-indicator::after {color: #ffffff;}
+
+@media only screen and (max-width:650px) {
+ md-tab-group {width: 100%;}
+ /deep/.mat-tab-body-content {width: 90%; margin: 0px auto 0px auto;}
+ .img_tab {width: 85%;}
+ .img_title_big {width: 100%;  padding-top: 0px; padding-bottom: 10px;}
+ .img_title {width: 100%; padding-top: 20px; padding-bottom: 20px;}
+ .img_pan {width: 90%; height: 100%;}
+}

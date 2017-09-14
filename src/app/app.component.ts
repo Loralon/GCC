@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core'
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'parallax_comp',
+  template: `
+    <div ngui-parallax style="height: 304px;">
+      <img src="../../assets/img/gcc_casualtyscroll2.png" style="width: 100%;"/>
+    </div>
+  `
 })
-export class AppComponent {
-  title = 'app';
-}
+export class AppComponent {}
